@@ -69,3 +69,8 @@ Documentar não só o resultado, mas o raciocínio por trás de cada decisão, f
 
 **Wagner Duarte**
 [LinkedIn](https://www.linkedin.com/in/wagnerldsfilho/) · [GitHub](https://github.com/wagnerldsfilho)
+
+Imagem do dashboard em Power Bi 
+
+<img width="1432" height="795" alt="image" src="https://github.com/user-attachments/assets/8426869d-4339-4b6f-bd2f-d638a1a3eee0" />
+
