@@ -75,12 +75,16 @@ GO
 
 -- 2. TABELA FATO PEDIDOS (Cabeçalho do pedido, status e data do evento)
 GO
-CREATE OR ALTER VIEW vw_fact_orders AS
+CREATE OR ALTER VIEW vw_dim_orders AS
 SELECT 
     order_id,
     customer_id,
     order_status, 
-    CAST(order_purchase_timestamp AS DATE) AS order_purchase_date
+    CAST(order_purchase_timestamp AS DATE) AS order_purchase_timestamp, 
+    CAST(order_approved_at AS DATE) AS order_approved_at, 
+    CAST(order_delivered_carrier_date AS DATE) AS order_delivered_carrier_date, 
+    CAST(order_delivered_customer_date AS DATE) AS order_delivered_customer_date, 
+    CAST(order_estimated_delivery_date AS DATE) AS order_estimated_delivery_date
 FROM orders
 WHERE 
     order_purchase_timestamp >= '2017-01-01'
@@ -95,9 +99,12 @@ SELECT
     order_item_id, 
     product_id, 
     seller_id,
-    (price + freight_value) AS total_item_value
+    (price + freight_value) AS total_item_value,
+    price, 
+    freight_value
 FROM order_items
 GO 
+
 
 -- 4. TABELA FATO PAGAMENTOS (Transações financeiras e métodos)
 GO
@@ -128,4 +135,3 @@ SELECT
     seller_state
 FROM sellers
 GO 
-
