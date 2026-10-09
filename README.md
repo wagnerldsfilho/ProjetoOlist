@@ -6,13 +6,6 @@ Análise do [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.co
 
 Responder perguntas de negócio sobre vendas, receita e logística de um marketplace e a partir delas, levantar novas análises que apontem onde há perda de eficiência e concentração de receita.
 
-## Perguntas de negócio
-
-- Qual a distribuição de pedidos por status e a taxa de cancelamento?
-- Qual a taxa de recompra dos clientes? 
-- Qual a receita por mês, categoria e estado? 
-- Quem são os top 10 vendedores por receita?
-- Qual é o Ticket médio?
 
 ## Principais achados
 
@@ -20,6 +13,17 @@ Responder perguntas de negócio sobre vendas, receita e logística de um marketp
 - **Atrasos nas entregas:** vêm de um gargalo em períodos de pico de vendas.
 - **Logística interestadual:** vários estados têm poucos vendedores locais, o que gera frete e custo logístico interestadual. SP concentra os maiores vendedores e é a principal origem da receita.
 - **Recompra baixa:** a taxa de recompra é baixa, o que abre espaço para a próxima análise.
+
+<img width="1416" height="793" alt="dashboardOlist" src="https://github.com/user-attachments/assets/8397af72-f454-47a1-bc6a-26fbfb42d149" />
+
+
+## Perguntas de negócio
+
+- Qual a distribuição de pedidos por status e a taxa de cancelamento?
+- Qual a taxa de recompra dos clientes? 
+- Qual a receita por mês, categoria e estado? 
+- Quem são os top 10 vendedores por receita?
+- Qual é o Ticket médio?
 
 ## Próximo passo
 
